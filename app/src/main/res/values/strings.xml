@@ -1,0 +1,100 @@
+<resources>
+
+    <string name="app_name">AR Toolbox</string>
+
+    <string name="scene_viewer_native_uri">https://arvr.google.com/scene-viewer/1.1</string>
+    <string name="scene_viewer_native_model">https://poly.googleapis.com/downloads/fp/1562493657287824/dLHpzNdygsg/f4d6EEz_n3N/Astronaut.gltf</string>
+    <string name="scene_viewer_native_link">https://poly.google.com/view/dLHpzNdygsg</string>
+    <string name="scene_viewer_native_title">Astronaut</string>
+    <string name="scene_viewer_web">https://model-viewer.glitch.me/</string>
+
+    <string name="tooltip_model_sphere">Sphere</string>
+    <string name="tooltip_model_cylinder">Cylinder</string>
+    <string name="tooltip_model_cube">Cube</string>
+    <string name="tooltip_model_layout">Layout</string>
+    <string name="tooltip_model_andy">Andy</string>
+    <string name="tooltip_model_drawing">Drawing</string>
+    <string name="tooltip_model_link">Link</string>
+    <string name="tooltip_model_cloud_anchor">Cloud Anchor</string>
+    <string name="tooltip_model_video">Video</string>
+    <string name="tooltip_model_measure">Measure</string>
+
+    <string name="format_pose_translation">[x:%1$ .03f, y:%2$ .03f, z:%3$ .03f]</string>
+    <string name="format_pose_rotation">[x:%1$ .02f, y:%2$ .02f, z:%3$ .02f, w:%4$ .02f]</string>
+    <string name="format_vector3">[x:%1$ .03f, y:%2$ .03f, z:%3$ .03f]</string>
+    <string name="format_quaternion">[x:%1$ .02f, y:%2$ .02f, z:%3$ .02f, w:%4$ .02f]</string>
+    <string name="format_session">[Anchors:%1$d, Planes:%2$d, Points:%3$d]</string>
+    <string name="format_camera_config">[Size:%1$s, Fps:%2$s, Depth:%3$b]</string>
+    <string name="format_distance_m">%.2f&#160;m</string>
+    <string name="format_distance_cm">%d&#160;cm</string>
+    <string name="format_measure_single">[%1$s×%2$s]</string>
+    <string name="format_measure_multiple">[%1$s×%2$s] =&#160;%3$s</string>
+
+    <string name="tracking_success">Tracking</string>
+    <string name="tracking_stopped">Tracking stopped</string>
+    <string name="tracking_failure_none">Tracking paused</string>
+    <string name="tracking_failure_bad_state">Bad state</string>
+    <string name="tracking_failure_insufficient_light">Insufficient light</string>
+    <string name="tracking_failure_excessive_motion">Excessive motion</string>
+    <string name="tracking_failure_insufficient_features">Insufficient features</string>
+    <string name="tracking_failure_camera_unavailable">Camera unavailable</string>
+    <string name="augmented_faces">Augmented Faces</string>
+
+    <string name="menu_item_screenshot">Screen capture</string>
+    <string name="menu_item_record">Screen record</string>
+    <string name="menu_item_quality_2160p">2160p</string>
+    <string name="menu_item_quality_1080p">1080p</string>
+    <string name="menu_item_quality_720p">720p</string>
+    <string name="menu_item_quality_480p">480p</string>
+    <string name="menu_item_modes">Switch mode</string>
+    <string name="menu_item_mode_scene">3D Scene</string>
+    <string name="menu_item_mode_faces">Augmented Faces</string>
+    <string name="menu_item_mode_native_viewer">Native Scene Viewer</string>
+    <string name="menu_item_mode_web_viewer">Web Scene Viewer</string>
+    <string name="menu_item_performance_overlay">Performance overlay</string>
+    <string name="menu_item_resolve_cloud_anchor">Resolve Cloud Anchor</string>
+    <string name="menu_item_clean_up_scene">Clean up scene</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="menu_item_sunlight">Sunlight</string>
+    <string name="menu_item_shadows">Shadows</string>
+    <string name="menu_item_plane_renderer">Plane renderer</string>
+    <string name="menu_item_selection_visualizer">Selection visualizer</string>
+    <string name="menu_item_reticle">Reticle</string>
+    <string name="menu_item_point_cloud">Point cloud</string>
+    <string name="menu_item_face_regions">Face regions</string>
+    <string name="menu_item_face_mesh">Face mesh</string>
+
+    <string name="entry_position_label">Position</string>
+    <string name="entry_rotation_label">Rotation</string>
+    <string name="entry_scene_label">Scene</string>
+    <string name="entry_camera_label">Camera</string>
+    <string name="entry_color_label">Color</string>
+    <string name="entry_cloud_anchor_id_label">ID</string>
+    <string name="entry_cloud_anchor_state_label">State</string>
+    <string name="entry_metallic_label">Metallic</string>
+    <string name="entry_roughness_label">Roughness</string>
+    <string name="entry_reflectance_label">Reflectance</string>
+    <string name="entry_measure_label">Measure</string>
+    <string name="entry_scale_label">Scale</string>
+    <string name="entry_face_forehead_left_label">Forehead left</string>
+    <string name="entry_face_forehead_right_label">Forehead right</string>
+    <string name="entry_face_nose_tip_label">Nose tip</string>
+
+    <string name="screenshot_saving">Saving screenshot…</string>
+    <string name="recording">Recording…</string>
+
+    <string name="model_link_custom_hint">sfb, glTF, glb, …</string>
+
+    <string name="exception_arcore_not_installed">Please install ARCore</string>
+    <string name="exception_apk_too_old">Please update ARCore</string>
+    <string name="exception_sdk_too_old">Please update this app</string>
+    <string name="exception_device_not_compatible">This device does not support AR</string>
+    <string name="exception_user_declined_installation">User declined installation</string>
+    <string name="exception_unknown">Failed to create AR session</string>
+
+    <string name="cloud_anchor_id_hint">Cloud Anchor ID</string>
+    <string name="cloud_anchor_id_resolve">Resolve</string>
+    <string name="cloud_anchor_id_label">Cloud Anchor ID</string>
+    <string name="cloud_anchor_id_copied_to_clipboard">Cloud Anchor ID copied to clipboard!</string>
+
+</resources>

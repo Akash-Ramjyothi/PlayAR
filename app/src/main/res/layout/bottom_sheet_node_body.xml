@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:clickable="true"
+    android:paddingLeft="@dimen/bottom_sheet_horizontal_padding"
+    android:paddingRight="@dimen/bottom_sheet_horizontal_padding"
+    android:paddingBottom="@dimen/material_unit_1"
+    tools:ignore="KeyboardInaccessibleWidget,Overdraw"
+    tools:showIn="@layout/bottom_sheet_node">
+
+    <TextView
+        android:id="@+id/colorLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_color_label"
+        app:layout_constraintBottom_toTopOf="@+id/colorValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fr.smarquis.ar_toolbox.ColorSeekBar
+        android:id="@+id/colorValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/material_unit_1"
+        android:layout_marginRight="@dimen/material_unit_1"
+        app:colorSeeds="@array/colors"
+        app:layout_constraintBottom_toTopOf="@+id/metallicLabel"
+        app:layout_constraintTop_toBottomOf="@+id/colorLabel" />
+
+    <TextView
+        android:id="@+id/metallicLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_metallic_label"
+        app:layout_constraintBottom_toTopOf="@+id/metallicValue"
+        app:layout_constraintTop_toBottomOf="@+id/colorValue" />
+
+    <SeekBar
+        android:id="@+id/metallicValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/roughnessLabel"
+        app:layout_constraintTop_toBottomOf="@+id/metallicLabel"
+        tools:progress="0" />
+
+    <TextView
+        android:id="@+id/roughnessLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_roughness_label"
+        app:layout_constraintBottom_toTopOf="@+id/roughnessValue"
+        app:layout_constraintTop_toBottomOf="@+id/metallicValue" />
+
+    <SeekBar
+        android:id="@+id/roughnessValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/reflectanceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/roughnessLabel"
+        tools:progress="40" />
+
+    <TextView
+        android:id="@+id/reflectanceLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_reflectance_label"
+        app:layout_constraintBottom_toTopOf="@+id/reflectanceValue"
+        app:layout_constraintTop_toBottomOf="@+id/roughnessValue" />
+
+    <SeekBar
+        android:id="@+id/reflectanceValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/cloudAnchorIdLabel"
+        app:layout_constraintTop_toBottomOf="@+id/reflectanceLabel"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/cloudAnchorIdLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_cloud_anchor_id_label"
+        app:layout_constraintBottom_toTopOf="@+id/cloudAnchorIdValue"
+        app:layout_constraintTop_toBottomOf="@+id/reflectanceValue" />
+
+    <TextView
+        android:id="@+id/cloudAnchorIdValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cloudAnchorStateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cloudAnchorIdLabel" />
+
+    <TextView
+        android:id="@+id/cloudAnchorStateLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_cloud_anchor_state_label"
+        app:layout_constraintBottom_toTopOf="@+id/cloudAnchorStateValue"
+        app:layout_constraintTop_toBottomOf="@+id/cloudAnchorIdValue" />
+
+    <TextView
+        android:id="@+id/cloudAnchorStateValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/measureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cloudAnchorStateLabel" />
+
+    <TextView
+        android:id="@+id/measureLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_measure_label"
+        app:layout_constraintBottom_toTopOf="@+id/measureValue"
+        app:layout_constraintTop_toBottomOf="@+id/cloudAnchorStateValue" />
+
+    <TextView
+        android:id="@+id/measureValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/positionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/measureLabel" />
+
+    <TextView
+        android:id="@+id/positionLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_position_label"
+        app:layout_constraintBottom_toTopOf="@+id/positionValue"
+        app:layout_constraintTop_toBottomOf="@+id/measureValue" />
+
+    <TextView
+        android:id="@+id/positionValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/rotationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/positionLabel" />
+
+    <TextView
+        android:id="@+id/rotationLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_rotation_label"
+        app:layout_constraintBottom_toTopOf="@+id/rotationValue"
+        app:layout_constraintTop_toBottomOf="@+id/positionValue" />
+
+    <TextView
+        android:id="@+id/rotationValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scaleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/rotationLabel" />
+
+    <TextView
+        android:id="@+id/scaleLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_scale_label"
+        app:layout_constraintBottom_toTopOf="@+id/scaleValue"
+        app:layout_constraintTop_toBottomOf="@+id/rotationValue" />
+
+    <TextView
+        android:id="@+id/scaleValue"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scaleLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

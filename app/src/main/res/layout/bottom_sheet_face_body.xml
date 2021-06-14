@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:clickable="true"
+    android:paddingLeft="@dimen/bottom_sheet_horizontal_padding"
+    android:paddingRight="@dimen/bottom_sheet_horizontal_padding"
+    android:paddingBottom="@dimen/material_unit_1"
+    tools:ignore="KeyboardInaccessibleWidget,Overdraw"
+    tools:showIn="@layout/bottom_sheet_face">
+
+    <TextView
+        android:id="@+id/foreheadLeftLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_face_forehead_left_label"
+        app:layout_constraintBottom_toTopOf="@+id/foreheadLeftTranslation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foreheadLeftTranslation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/foreheadLeftRotation"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadLeftLabel" />
+
+    <TextView
+        android:id="@+id/foreheadLeftRotation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/foreheadRightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadLeftTranslation" />
+
+    <TextView
+        android:id="@+id/foreheadRightLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_face_forehead_right_label"
+        app:layout_constraintBottom_toTopOf="@+id/foreheadRightTranslation"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadLeftRotation" />
+
+    <TextView
+        android:id="@+id/foreheadRightTranslation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/foreheadRightRotation"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadRightLabel" />
+
+    <TextView
+        android:id="@+id/foreheadRightRotation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/noseTipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadRightTranslation" />
+
+    <TextView
+        android:id="@+id/noseTipLabel"
+        style="@style/PropertyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_unit_1"
+        android:text="@string/entry_face_nose_tip_label"
+        app:layout_constraintBottom_toTopOf="@+id/noseTipTranslation"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadRightRotation" />
+
+    <TextView
+        android:id="@+id/noseTipTranslation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/noseTipRotation"
+        app:layout_constraintTop_toBottomOf="@+id/noseTipLabel" />
+
+    <TextView
+        android:id="@+id/noseTipRotation"
+        style="@style/PropertyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noseTipTranslation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

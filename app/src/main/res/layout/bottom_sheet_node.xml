@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/bottom_sheet_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:gestureInsetBottomIgnored="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:showIn="@layout/activity_scene">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/bottom_sheet_node_header" />
+
+    <include
+        android:id="@+id/body"
+        layout="@layout/bottom_sheet_node_body" />
+
+</LinearLayout>

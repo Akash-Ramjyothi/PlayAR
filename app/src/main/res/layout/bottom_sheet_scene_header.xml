@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_sheet_peek_height"
+    android:background="@drawable/bottom_sheet_background"
+    android:divider="@drawable/material_divider_1"
+    android:elevation="@dimen/material_elevation"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal"
+    android:outlineProvider="background"
+    android:paddingLeft="@dimen/bottom_sheet_horizontal_padding"
+    android:paddingRight="@dimen/bottom_sheet_horizontal_padding"
+    android:showDividers="middle"
+    tools:showIn="@layout/bottom_sheet_scene">
+
+    <ImageView
+        android:id="@+id/status"
+        style="@style/HeaderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription"
+        tools:src="@android:drawable/presence_online" />
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/HeaderTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        tools:text="@string/tracking_success" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/recording"
+        style="@style/HeaderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:enabled="false"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_recording"
+        app:tint="@null"
+        tools:ignore="ContentDescription" />
+
+    <fr.smarquis.ar_toolbox.ImageViewPreventScroll
+        android:id="@+id/add"
+        style="@style/HeaderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:enabled="false"
+        app:srcCompat="@drawable/ic_add_node"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/more"
+        style="@style/HeaderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_more"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
